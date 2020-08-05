@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" x-undefined="" />
+        <title>Untitled 1</title>
+        <!-- <link rel="stylesheet" href="/SiteAssets/Scripts/HR Incident Report/style.css"> -->
+        <link
+            href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css"
+            rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="ui two column centered grid">
+            <div class="column">
+                <div class="ui message">
+                    <div class="header">
+                        Changes in Service
+                    </div>
+                    <div class="ui small comments" id="bodyChat">
+                        <h3 class="ui dividing header"></h3>
+                        <!-- <div class="comment">
+                            <a class="avatar">
+                                <img src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+                            </a>
+                            <div class="content">
+                                <a class="author">Matt</a>
+                                <div class="metadata">
+                                    <span class="date">Today at 5:42PM</span>
+                                </div>
+                                <div class="text">
+                                    How artistic!
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+                            </a>
+                            <div class="content">
+                                <a class="author">Elliot Fu</a>
+                                <div class="metadata">
+                                    <span class="date">Yesterday at 12:30AM</span>
+                                </div>
+                                <div class="text">
+                                    <p>This has been very useful for my research. Thanks as well!</p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Jenny Hess</a>
+                                        <div class="metadata">
+                                            <span class="date">Just now</span>
+                                        </div>
+                                        <div class="text">
+                                            Elliot you are always so right :)
+                                        </div>
+                                        <div class="actions">
+                                            <a class="reply">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="https://semantic-ui.com/images/avatar/small/matt.jpg">
+                            </a>
+                            <div class="content">
+                                <a class="author">Joe Henderson</a>
+                                <div class="metadata">
+                                    <span class="date">5 days ago</span>
+                                </div>
+                                <div class="text">
+                                    Dude, this is awesome. Thanks so much
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="ui reply form">
+                            <div class="field">
+                                <div class="ui input" style="border: 1px solid rgba(34,36,38,.15);">
+                                    <input type="file" id="upload" style="display: none;">
+                                    <a href="#" id="upload_link"><img
+                                            src="https://img.icons8.com/fluent/48/000000/attach.png" style="width: 20px;
+                                                    height: 24px;
+                                                    margin-top: 6px;
+                                                    margin-left: 3px;" /></a>
+                                    <input type="text" autocomplete="off" id="messreply"
+                                        placeholder="Write your message..." style="border: none;">
+                                </div>
+                                <div id="filename"></div>
+                                <a href="#" id="uploading" onclick="getFileUrl(this);"></a>
+                                <progress value="0" max="100" id="progress" style="display: none;"></progress>
+                            </div>
+                            <div class="ui blue labeled submit icon button" id="send_id" onclick="send();">
+                                <i class="icon edit"></i> Send
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script
+        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+        integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg=="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-storage.js"></script>
+    <script src="./script.js"></script>
+
+</html>
