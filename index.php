@@ -1,5 +1,8 @@
 <?php include_once("home.html");
 echo '<input type="text">';
+<script type="text/javascript">
+  <?php echo "alert('message');"; ?>
+</script>
 // <script>
 // var firebaseConfig = {
 //   apiKey: "AIzaSyDqtR2_hDyvrmXqynZWoi8rg3GDR539XpI",
