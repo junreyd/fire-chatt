@@ -1,4 +1,7 @@
-﻿var firebaseConfig = {
+<?php include_once("home.html");
+
+<script>
+var firebaseConfig = {
   apiKey: "AIzaSyDqtR2_hDyvrmXqynZWoi8rg3GDR539XpI",
   authDomain: "ir-chatbox.firebaseapp.com",
   databaseURL: "https://ir-chatbox.firebaseio.com",
@@ -15,11 +18,10 @@ firebase.initializeApp(firebaseConfig);
 
 $(function () {
   var ref = firebase.database().ref("message");
-
+  console.log(ref);
   ref.on("child_added", function (snapshot) {
-
+    console.log(snapshot.val());
     let html = "";
-    let delet = "";
     var start = moment(new Date());
 
     // if (snapshot.val().sender == currentUserCompleteName) {
@@ -691,3 +693,6 @@ function deleteItem(url, oldItem) {
     }
   });
 }
+</script>
+
+?>
